@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+main{
+    background-color: red;
+    background-image: url(/interactive-pricing-component-main/images/bg-pattern.svg);
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    height: 800px;
+}
+.container h1{
+    font-weight: 800;
+}
+.title {
+    background-image: url(/interactive-pricing-component-main/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center 5%;
+    height: 145px;
+    padding-top: 40px;
+    text-align: center;
+}
+.card{
+    border: 1px solid black;
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-card{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom-card ul{
+    list-style-image: url(/interactive-pricing-component-main/images/icon-check.svg);
+}
+.slidecontainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 15px;
+  border-radius: 5px;  
+  background: hsl(224, 65%, 95%);
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: url(/interactive-pricing-component-main/images/icon-slider.svg);
+  background-color: hsl(174, 86%, 45%);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: url(/interactive-pricing-component-main/images/icon-slider.svg);
+  cursor: pointer;
+}
